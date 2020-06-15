@@ -94,4 +94,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5b85943d001b141bdcda36ac5f3a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partDescription: SPINED DESCRIPTION
+  partDescription: A tough fin with many spined ribs along it. Provides decent protection
+    against most attacks.

@@ -94,4 +94,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5b85943d001b141bdcda36ac5f3a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partDescription: HOLE DESCRIPTION
+  partDescription: A basic pair of eyes, allow you to see in well lit places in fine
+    detail, but struggle with dark places.
