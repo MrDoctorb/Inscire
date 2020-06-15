@@ -1,0 +1,752 @@
+fileFormatVersion: 2
+guid: 7e536f05235037242b29629518afe6fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -451534014409981316
+    second: Pin_Buttons_0
+  - first:
+      213: 1461329971295488227
+    second: Pin_Buttons_1
+  - first:
+      213: 3705373043466716832
+    second: Pin_Buttons_2
+  - first:
+      213: -8299517560719000262
+    second: Pin_Buttons_3
+  - first:
+      213: -6284770044292958940
+    second: Pin_Buttons_4
+  - first:
+      213: -223634390533829844
+    second: Pin_Buttons_5
+  - first:
+      213: -696001936052976464
+    second: Pin_Buttons_6
+  - first:
+      213: -9003872683837084088
+    second: Pin_Buttons_7
+  - first:
+      213: 6895321747879632800
+    second: Pin_Buttons_8
+  - first:
+      213: 3902516114580318045
+    second: Pin_Buttons_9
+  - first:
+      213: 3879595364708803089
+    second: Pin_Buttons_10
+  - first:
+      213: 2645647737565498893
+    second: Pin_Buttons_11
+  - first:
+      213: -2688686929648239392
+    second: Pin_Buttons_12
+  - first:
+      213: -8877985973723574922
+    second: Pin_Buttons_13
+  - first:
+      213: 6004012138153186368
+    second: Pin_Buttons_14
+  - first:
+      213: 8067468904730301768
+    second: Pin_Buttons_15
+  - first:
+      213: -1530828542177799337
+    second: Pin_Buttons_16
+  - first:
+      213: 1763912070243621345
+    second: Pin_Buttons_17
+  - first:
+      213: 2762969287441353115
+    second: Pin_Buttons_18
+  - first:
+      213: -4058715673723957962
+    second: Pin_Buttons_19
+  - first:
+      213: 2122588294375396907
+    second: Pin_Buttons_20
+  - first:
+      213: -8502578833018968313
+    second: Pin_Buttons_21
+  - first:
+      213: 5418075084676582257
+    second: Pin_Buttons_22
+  - first:
+      213: -6760088806886693910
+    second: Pin_Buttons_23
+  - first:
+      213: -4108355296926768043
+    second: Pin_Buttons_24
+  - first:
+      213: 1048553151728235300
+    second: Pin_Buttons_25
+  - first:
+      213: -1500966765518540704
+    second: Pin_Buttons_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pin_Buttons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72461bc434dbb9f0800000000000000
+      internalID: -451534014409981316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 130
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e803becddfa74410800000000000000
+      internalID: 1461329971295488227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 130
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a64420b6212c6330800000000000000
+      internalID: 3705373043466716832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 130
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d3a3250c032dc80800000000000000
+      internalID: -8299517560719000262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 130
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425f6ee51f208c8a0800000000000000
+      internalID: -6284770044292958940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b8ba8e4bd75ecf0800000000000000
+      internalID: -223634390533829844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_6
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 104
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4049e3ded4756f0800000000000000
+      internalID: -696001936052976464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_7
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 104
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e2c05af71db0380800000000000000
+      internalID: -9003872683837084088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 104
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af1462c89a11bf50800000000000000
+      internalID: 6895321747879632800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_9
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 104
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d572cc3dab5882630800000000000000
+      internalID: 3902516114580318045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11268b1ed6717d530800000000000000
+      internalID: 3879595364708803089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_11
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 78
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e486e999a37b420800000000000000
+      internalID: 2645647737565498893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_12
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 78
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecb4169b7ddfaad0800000000000000
+      internalID: -2688686929648239392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 78
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d4e436bce0bc480800000000000000
+      internalID: -8877985973723574922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 78
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04411c1aa39825350800000000000000
+      internalID: 6004012138153186368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84595feb93865ff60800000000000000
+      internalID: 8067468904730301768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_16
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 52
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75396733d8761cae0800000000000000
+      internalID: -1530828542177799337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_17
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 52
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e915e9aeacaa7810800000000000000
+      internalID: 1763912070243621345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 52
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9981479de9085620800000000000000
+      internalID: 2762969287441353115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_19
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 52
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d8f57499b8ca7c0800000000000000
+      internalID: -4058715673723957962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 26
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26d5aacec2f47d10800000000000000
+      internalID: 2122588294375396907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_21
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 26
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70726279995c00a80800000000000000
+      internalID: -8502578833018968313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_22
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 26
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bca84559ed03b40800000000000000
+      internalID: 5418075084676582257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 26
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3ac6feb075f22a0800000000000000
+      internalID: -6760088806886693910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_24
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 26
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554e59bdf903cf6c0800000000000000
+      internalID: -4108355296926768043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423b0e839853d8e00800000000000000
+      internalID: 1048553151728235300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pin_Buttons_26
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060b991edae7b2be0800000000000000
+      internalID: -1500966765518540704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 415d0534dc759014582959fd48c62367
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 801251170964925540
+    second: Inventory_Book_0
+  - first:
+      213: -2869325448774471282
+    second: Inventory_Book_1
+  - first:
+      213: -1586287426438605362
+    second: Inventory_Book_2
+  - first:
+      213: -8521613132682653578
+    second: Inventory_Book_3
+  - first:
+      213: 7579483208698165302
+    second: Inventory_Book_4
+  - first:
+      213: 2620256738304107572
+    second: Inventory_Book_5
+  - first:
+      213: 3445407434424965438
+    second: Inventory_Book_6
+  - first:
+      213: -7994106365802313243
+    second: Inventory_Book_7
+  - first:
+      213: 2739250387924477104
+    second: Inventory_Book_8
+  - first:
+      213: -2900785969615747972
+    second: Inventory_Book_9
+  - first:
+      213: -3779349560115846867
+    second: Inventory_Book_10
+  - first:
+      213: -7810694851099765711
+    second: Inventory_Book_11
+  - first:
+      213: -7231592320876535625
+    second: Inventory_Book_12
+  - first:
+      213: 3225822647867577550
+    second: Inventory_Book_13
+  - first:
+      213: 2211233157051286572
+    second: Inventory_Book_14
+  - first:
+      213: 6396036394036998674
+    second: Inventory_Book_15
+  - first:
+      213: 4484468204625695691
+    second: Inventory_Book_16
+  - first:
+      213: 4399316881327734113
+    second: Inventory_Book_17
+  - first:
+      213: 7845571321921168131
+    second: Inventory_Book_18
+  - first:
+      213: -5458631435031393121
+    second: Inventory_Book_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Inventory_Book_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cea3dd1bd9e1b00800000000000000
+      internalID: 801251170964925540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1088
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e813fc8e4bb1e28d0800000000000000
+      internalID: -2869325448774471282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1088
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5557b7dff5cf9e0800000000000000
+      internalID: -1586287426438605362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_3
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1088
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670952951062db980800000000000000
+      internalID: -8521613132682653578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638fd7b02dbbf2960800000000000000
+      internalID: 7579483208698165302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 816
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434a0faee950d5420800000000000000
+      internalID: 2620256738304107572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 816
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39d36b9ecb80df20800000000000000
+      internalID: 3445407434424965438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_7
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 816
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e90aa96d9a3f0190800000000000000
+      internalID: -7994106365802313243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4e613f6b5c30620800000000000000
+      internalID: 2739250387924477104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_9
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 544
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74cd9797865eb7d0800000000000000
+      internalID: -2900785969615747972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 544
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d212443599d0d8bc0800000000000000
+      internalID: -3779349560115846867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_11
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 544
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134d93f6a66da9390800000000000000
+      internalID: -7810694851099765711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b026b9491934ab90800000000000000
+      internalID: -7231592320876535625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_13
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 272
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec49e8a6b9c64cc20800000000000000
+      internalID: 3225822647867577550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 272
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c248b9937d0efae10800000000000000
+      internalID: 2211233157051286572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_15
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 272
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212bb05763943c850800000000000000
+      internalID: 6396036394036998674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc39f3782180c3e30800000000000000
+      internalID: 4484468204625695691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_17
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d3bed15638d0d30800000000000000
+      internalID: 4399316881327734113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_18
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3036a17bc8111ec60800000000000000
+      internalID: 7845571321921168131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Book_19
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 336
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c4c2381ab0f34b0800000000000000
+      internalID: -5458631435031393121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
