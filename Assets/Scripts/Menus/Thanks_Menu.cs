@@ -19,22 +19,21 @@ public class Thanks_Menu : MonoBehaviour
     {
         if (Input.GetButtonDown("Primary"))
         {
-                switch (selected)
-                {
-                    case 0:
+            switch (selected)
+            {
+                case 0:
                     //Gamejolt Link
-                    print("g-GAME");
-                        break;
-                    case 1:
-                        //Feedback Lonk
+                    Application.OpenURL("https://gamejolt.com/games/Inscire/507233");
+                    break;
+                case 1:
+                    //Feedback Lonk
+                    Application.OpenURL("https://forms.gle/rMBKBSzggKiAMFjK8");
+                    break;
+                case 2:
+                    Application.Quit();
+                    break;
+            }
 
-                        print("Fedd");
-                        break;
-                    case 2:
-                        Application.Quit();
-                        break;
-                }
-            
         }
         else if (Input.GetKeyDown("a"))
         {

@@ -29,9 +29,11 @@ public class Arm_Stats : MonoBehaviour
 
     public IEnumerator Cooldown()
     {
+        print(gameObject.name + " needs to chill");
         readyToAttack = false;
         yield return  ZaneSpace.Wait.WaitMySeconds(cooldownTime);
         readyToAttack = true;
+        print(gameObject.name + " is ready to attack");
     }
 
     void OnTriggerEnter2D(Collider2D other)

@@ -12,7 +12,6 @@ public class Text_Event : MonoBehaviour, IInteractable, ITextEvent, ISaveable
 
     void OnEnable()
     {
-        saveKey = gameObject.name + " " + transform.position.x + " " + transform.position.y;
         if (invisible)
         {
             GetComponent<SpriteRenderer>().enabled = false;
@@ -48,17 +47,20 @@ public class Text_Event : MonoBehaviour, IInteractable, ITextEvent, ISaveable
             }
         }
         finished = true;
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 
     public void SaveData(Scene_Data data)
     {
+        saveKey = gameObject.name + " " + transform.position.x + " " + transform.position.y;
         data.Store<object>(saveKey, finished);
     }
 
     public void LoadData(Scene_Data data)
     {
+        saveKey = gameObject.name + " " + transform.position.x + " " + transform.position.y;
         finished = (bool)data.Take<object>(saveKey);
+        print("Text event was loaded, and finished=" + finished);
         if (finished)
         {
             gameObject.SetActive(false);

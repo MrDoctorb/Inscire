@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -710,8 +710,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 25, y: -85}
-  m_SizeDelta: {x: 355, y: 145}
+  m_AnchoredPosition: {x: 33, y: -185}
+  m_SizeDelta: {x: 700, y: 325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1389844968
 MonoBehaviour:
@@ -733,7 +733,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 434b1fce5c9761448ad13ec3f2f88271, type: 3}
-    m_FontSize: 16
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -744,11 +744,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thank you so much for playing! I've spent alot of time working on this
-    game and I'm so greatful you took the time to play it! If you experinced any
-    bugs, give feedback, or just want to tell me something please select the Feedback
-    button, I would love to hear about it! Thank you so much once again and I hope
-    I can make this small demo into a full game one day!                  -Mr Doctorb
+  m_Text: 'Thank you so much for playing! I''ve spent alot of time working on this
+    game and I''m so greatful you took the time to play it! If you experinced any
+    bugs, wante to give feedback, or just want to tell me something please select
+    the Feedback button, I would love to hear about it! Thank you so much once again
+    and I hope I can make this small demo into a full game one day!
+
+    -Mr Doctorb'
 --- !u!222 &1389844969
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -35,6 +35,7 @@ public class Attack : MonoBehaviour
                 raycastList = new RaycastHit2D[100];
                 if (leftArm.GetComponent<Arm_Stats>().readyToAttack)
                 {
+                    print("L attack");
                     if (!ArmAttack(leftArm))
                     {
                         FindInteractable();
@@ -47,6 +48,7 @@ public class Attack : MonoBehaviour
             }
             else if (Input.GetButtonDown("Secondary") && rightArm.GetComponent<Arm_Stats>().readyToAttack)
             {
+                raycastList = new RaycastHit2D[100];
                 if (!ArmAttack(rightArm))
                 {
                     rightArm.GetComponent<Arm_Stats>().Propel();
