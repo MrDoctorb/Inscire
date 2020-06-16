@@ -17,6 +17,7 @@ public class Start_Menu : MonoBehaviour
         playMenu = GameObject.Find("Play_Menu");
         currentMenu = gameObject;
         transform.GetChild(selected).GetComponent<Image>().sprite = buttons[1];
+        System.IO.Directory.CreateDirectory(Application.persistentDataPath + "/Saves");
     }
 
     void Update()
