@@ -47,7 +47,7 @@ public class Text_Event : MonoBehaviour, IInteractable, ITextEvent, ISaveable
             }
         }
         finished = true;
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     public void SaveData(Scene_Data data)
