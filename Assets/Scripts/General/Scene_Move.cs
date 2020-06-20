@@ -25,7 +25,7 @@ public class Scene_Move : MonoBehaviour
             mc.transform.position = newLocation;
             mc.GetComponent<Move>().rot = rotation;
             mc.GetComponent<Move>().enabled = false;
-            SceneManager.LoadScene(scene);
+            ZaneSpace.ZScene.Load(scene);
             mc.GetComponent<Move>().enabled = true;
         }
     }

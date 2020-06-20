@@ -102,6 +102,7 @@ public class Mod_Menu : MonoBehaviour
     }
     IEnumerator Select()
     {
+        partSelected = 0;
         ReplacePart();
         submenu = true;
         Animator anm = buttons[selected].transform.GetChild(1).GetComponent<Animator>();
@@ -135,7 +136,7 @@ public class Mod_Menu : MonoBehaviour
         mc.transform.eulerAngles = new Vector3(0, 0, rot);
         mc.transform.position = pos;
         ZaneSpace.Info.gm.transform.GetChild(0).gameObject.SetActive(true);
-        SceneManager.LoadScene(scene);
+        ZaneSpace.ZScene.Load(scene);
     }
 
 }

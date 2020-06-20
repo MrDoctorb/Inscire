@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace ZaneSpace
 {
@@ -13,7 +14,6 @@ namespace ZaneSpace
         static float tempTime = time;
         static Vector2 tempVelocity = new Vector2();
         
-
         public static void gamePause()
         {
             gamePaused = !gamePaused;
@@ -69,5 +69,14 @@ namespace ZaneSpace
             set { interfaceText.Result = value; }
         }
         public static ITextEventContainer interfaceText;
+    }
+
+    public class ZScene : MonoBehaviour
+    {
+        public static void Load(string sceneName)
+        {
+            //Info.gm.GetComponent<Game_Manager>().ChangeSortingOrder(-1);
+            SceneManager.LoadScene(sceneName);
+        } 
     }
 }

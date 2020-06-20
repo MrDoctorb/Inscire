@@ -13,7 +13,6 @@ public class Pause_Menu : MonoBehaviour
     {
         transform.GetChild(selected).GetComponent<Image>().sprite = buttons[1];
     }
-
     void Update()
     {
         if (Input.GetButtonDown("Primary"))
@@ -26,11 +25,13 @@ public class Pause_Menu : MonoBehaviour
                     break;
                 case 1:
                     //Feedback
+                    Application.OpenURL("https://forms.gle/rMBKBSzggKiAMFjK8");
                     break;
                 case 2:
                     Info.gamePause();
                     gameObject.SetActive(false);
-                    SceneManager.LoadScene("Main_Menu");
+                    SceneManager.sceneLoaded -= Info.gm.GetComponent<Game_Manager>().OnSceneLoaded;
+                    ZScene.Load("Main_Menu");
                     Destroy(Info.mc);
                     Destroy(transform.parent.gameObject);
                     break;

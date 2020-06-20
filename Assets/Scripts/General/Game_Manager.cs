@@ -38,20 +38,31 @@ public class Game_Manager : MonoBehaviour
 
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ChangeSortingOrder();
+        string sceneName = SceneManager.GetActiveScene().name;
+        print(sceneName + " loaded");
+        Save_Manager.LoadSceneData(sceneName);
+    }
+
+    ///<summary>
+    ///Use 1 (or nothing) for loading into a function -1 for loading out
+    ///</summary>
+    public void ChangeSortingOrder(int loadIn = 1)
     {
         SpriteRenderer[] renderers = FindObjectsOfType<SpriteRenderer>();
         foreach (SpriteRenderer rend in renderers)
         {
-            float temp = rend.transform.position.y * -100;
-            rend.sortingOrder = (int)temp + rend.sortingOrder;
+            if (rend.sortingLayerName == "Objects")
+            {
+                float temp = rend.transform.position.y * -100;
+                rend.sortingOrder = rend.sortingOrder + ((int)temp * loadIn);
+            }
         }
 
-        string sceneName = SceneManager.GetActiveScene().name;
-        print(sceneName + " loaded");
-        Save_Manager.LoadSceneData(sceneName);
-
     }
+
     void Update()
     {
         if (Info.time != 0)
@@ -78,11 +89,6 @@ public class Game_Manager : MonoBehaviour
             Save_Manager.ClearAllData();
         }
 #endif
-    }
-
-    public static void MakeMC(GameObject mc)
-    {
-        Instantiate(mc);
     }
 
     Dictionary<string, GameObject> ListToDictionary(List<GameObject> list)
