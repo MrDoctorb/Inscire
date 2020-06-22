@@ -16,8 +16,7 @@ public class Mod_Menu : MonoBehaviour
     bool submenu = false;
 
     void Start()
-    {
-        text.text = "";
+    {        
         int i = 0;
         foreach (RectTransform child in GameObject.Find("Buttons").GetComponent<RectTransform>())
         {

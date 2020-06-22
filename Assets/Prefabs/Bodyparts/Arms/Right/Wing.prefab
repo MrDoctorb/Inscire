@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   propulsionForce: 10
-  cooldownTime: 1
+  cooldownTime: 0.5
 --- !u!70 &3247974527447047203
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

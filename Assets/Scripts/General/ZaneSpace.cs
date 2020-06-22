@@ -53,7 +53,7 @@ namespace ZaneSpace
             while (timeLeft >= 0)
             {
                 yield return new WaitForEndOfFrame();
-                if (Info.time != 0)
+                if (!Info.worldPaused)
                 {
                     timeLeft -= Time.deltaTime;
                 }

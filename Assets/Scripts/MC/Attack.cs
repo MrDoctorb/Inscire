@@ -67,7 +67,7 @@ public class Attack : MonoBehaviour
             //Stops searching for Interactables when it hits an empty part of the list
             if (obj == new RaycastHit2D())
             {
-                if (first)
+                if (first && rightArm.GetComponent<Arm_Stats>().readyToAttack)
                 {
                     leftArm.GetComponent<Arm_Stats>().Propel();
                 }

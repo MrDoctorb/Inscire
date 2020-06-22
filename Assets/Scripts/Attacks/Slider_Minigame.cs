@@ -15,7 +15,7 @@ public class Slider_Minigame : MonoBehaviour
     {
         bar = transform.GetChild(0).gameObject;
         startSpeed = speed;
-        Info.time = 0;
+        Info.worldPause();
         bounces = 0;
         dmg = 0;
         transform.position = GameObject.Find("Camera").transform.position + new Vector3(0, 0, 5);
@@ -84,7 +84,7 @@ public class Slider_Minigame : MonoBehaviour
 
     void Finish()
     {
-        Info.time = Time.deltaTime;
+        Info.worldPause();
         gameObject.SetActive(false);
     }
 }
