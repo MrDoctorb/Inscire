@@ -35,7 +35,6 @@ public class Attack : MonoBehaviour
                 raycastList = new RaycastHit2D[100];
                 if (leftArm.GetComponent<Arm_Stats>().readyToAttack)
                 {
-                    print("L attack");
                     if (!ArmAttack(leftArm))
                     {
                         FindInteractable();

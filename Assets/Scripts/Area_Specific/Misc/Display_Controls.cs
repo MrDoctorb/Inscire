@@ -9,6 +9,7 @@ public class Display_Controls : MonoBehaviour
     void Start()
     {
         text = transform.GetChild(0).GetChild(0).GetComponent<Text>();
+        text.gameObject.SetActive(true);
         //fade in the WASD move text
         text.CrossFadeAlpha(1, 5, true);
 

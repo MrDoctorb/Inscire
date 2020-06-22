@@ -57,7 +57,7 @@ public class Slider_Minigame : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetButtonDown("Primary") || Input.GetButtonDown("Secondary")) && bounces != 0)
+        if ((Input.GetButtonDown("Primary") || Input.GetButtonDown("Secondary")) && bounces != 0 && bounces <= maxBounces)
         {
             bar.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             float x = Mathf.Abs(bar.transform.localPosition.x);

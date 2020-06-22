@@ -37,6 +37,7 @@ public class Bull_Rush : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        print("hit");
         if (other.gameObject == board)
         {
             if (skull.velocity.y == 0)
@@ -65,7 +66,7 @@ public class Bull_Rush : MonoBehaviour
     }
     void Update()
     {
-        if (transform.parent.localScale.x >= 2 && !Info.worldPaused)
+        if (transform.parent.localScale.x >= 2 && !Info.gamePaused)
         {
             float x = Input.GetAxisRaw("Horizontal"), y = Input.GetAxisRaw("Vertical");
             mcBall.transform.Translate(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * Time.deltaTime * ballSpd);
