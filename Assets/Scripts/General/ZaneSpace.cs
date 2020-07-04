@@ -11,6 +11,7 @@ namespace ZaneSpace
         public static Rigidbody2D rb;
         public static float time = .02f;
         public static bool worldPaused = false, gamePaused = false;
+        public static Vector2 roomStartPosition = Vector2.zero;
         static float tempTime = time;
         static Vector2 tempVelocity = new Vector2();
         

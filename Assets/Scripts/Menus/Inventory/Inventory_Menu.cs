@@ -11,8 +11,8 @@ public class Inventory_Menu : MonoBehaviour
     GameObject selectBar;
     int options; //number of different selections. Length of allChild
     int currentSelection;
-    [System.NonSerialized] public float fadeTime = .25f;
-    [System.NonSerialized] public bool submenu = false;
+    [HideInInspector] public float fadeTime = .25f;
+    [HideInInspector] public bool submenu = false;
     void OnEnable()
     {
         Info.worldPause();

@@ -44,6 +44,7 @@ public class Game_Manager : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         print(sceneName + " loaded");
         Save_Manager.LoadSceneData(sceneName);
+        Info.roomStartPosition = Info.mc.transform.position;
     }
 
     ///<summary>

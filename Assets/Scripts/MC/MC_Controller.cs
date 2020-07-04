@@ -5,16 +5,30 @@ using ZaneSpace;
 using UnityEditor;
 
 public class MC_Controller : MonoBehaviour, IDamageable, IKnockbackable
-{
-    public int health;
+{ 
+    Health healthDisplay;
     public static int maxHealth = 3;
-    [System.NonSerialized] public bool invincible = false;
-
+    public int _health = maxHealth;
+    [HideInInspector] public bool invincible = false;
     public List<GameObject>[] unlockedParts = new List<GameObject>[5];
     [SerializeField]
     List<GameObject> unLeft = new List<GameObject>(),
     unRight = new List<GameObject>(), unCaudal = new List<GameObject>(),
     unDorsal = new List<GameObject>(), unEyes = new List<GameObject>();
+
+
+    public int health
+    {
+        get
+        {
+            return _health;
+        }
+        set
+        {
+            _health = value;
+            healthDisplay.ChangeHealth();
+        }
+    }
 
     List<SpriteRenderer> renderers = new List<SpriteRenderer>(0);
 
@@ -26,6 +40,7 @@ public class MC_Controller : MonoBehaviour, IDamageable, IKnockbackable
         unlockedParts[3] = unDorsal;
         unlockedParts[4] = unEyes;
         StartCoroutine(UpdateRenderers());
+        healthDisplay = Info.gm.transform.GetChild(0).GetChild(0).GetComponent<Health>();
     }
 
     void Update()

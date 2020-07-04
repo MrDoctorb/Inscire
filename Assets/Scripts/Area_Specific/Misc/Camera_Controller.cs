@@ -11,7 +11,7 @@ public class Camera_Controller : MonoBehaviour
     
     void Start()
     {
-        GameObject.Find("World_Light").GetComponent<Light2D>().intensity = startBrightness;
+        //GameObject.Find("World_Light").GetComponent<Light2D>().intensity = startBrightness;
         slideSpd = .15f;//After testing, seems good
         mc = ZaneSpace.Info.mc;
         if (still)

@@ -8,6 +8,7 @@ public class Bull_Rush : MonoBehaviour
     GameObject mcBall, board;
     Rigidbody2D skull;
     public float skullSpd, ballSpd, waitTime;
+    bool finished = false;
 
     void OnEnable()//Reset the thingys
     {
@@ -20,6 +21,7 @@ public class Bull_Rush : MonoBehaviour
         board.transform.position = GameObject.Find("Camera").transform.position + new Vector3(0, 0, 5);
         board.transform.eulerAngles = Vector3.zero;
         board.transform.localScale = Vector2.zero;
+        finished = false;
         StartCoroutine(StartGame());
     }
 
@@ -28,6 +30,7 @@ public class Bull_Rush : MonoBehaviour
         while (transform.parent.localScale.x <= 2)
         {
             transform.parent.localScale += new Vector3(2, 2, 0) * Time.deltaTime;
+            board.transform.eulerAngles = Vector3.zero;
             yield return new WaitForEndOfFrame();
         }
         skull.velocity = new Vector2(Random.Range(-1 * skullSpd, skullSpd), 0);
@@ -37,21 +40,23 @@ public class Bull_Rush : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("hit");
-        if (other.gameObject == board)
+        if (!finished)
         {
-            if (skull.velocity.y == 0)
+            if (other.gameObject == board)
             {
-                skull.velocity = new Vector2(skull.velocity.x * -1, 0);//Bounce off the wall at the start
+                if (skull.velocity.y == 0)
+                {
+                    skull.velocity = new Vector2(skull.velocity.x * -1, 0);//Bounce off the wall at the start
+                }
+                else
+                {
+                    Knockback();
+                }
             }
-            else
+            else if (other.gameObject == mcBall)
             {
-                Knockback();
+                Damage();
             }
-        }
-        if (other.gameObject == mcBall)
-        {
-            Damage();
         }
     }
     void Damage()
@@ -75,6 +80,7 @@ public class Bull_Rush : MonoBehaviour
 
     IEnumerator Finish()
     {
+        finished = true;
         while (transform.parent.localScale.x >= 0)
         {
             transform.parent.localScale -= new Vector3(2, 2, 0) * Time.deltaTime;

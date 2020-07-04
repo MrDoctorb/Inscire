@@ -9,7 +9,7 @@ public class Arm_Stats : MonoBehaviour
 {
     public List<IDamageable> dmgList;
     [SerializeField] float propulsionForce = 0, cooldownTime = 0;
-    [System.NonSerialized] public bool readyToAttack = true;
+    [HideInInspector] public bool readyToAttack = true;
     GameObject rechargeBar;
     Image rechargeImage;
 
