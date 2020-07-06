@@ -35,20 +35,22 @@ public class Game_Manager : MonoBehaviour
         unlockableParts.Add(dorsal);
         unlockableParts.Add(eye);
         //Oh well
-
     }
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         ChangeSortingOrder();
         string sceneName = SceneManager.GetActiveScene().name;
-        print(sceneName + " loaded");
         Save_Manager.LoadSceneData(sceneName);
-        Info.roomStartPosition = Info.mc.transform.position;
+        print(sceneName + " loaded");
+        if (!(Info.mc.GetComponent<MC_Controller>().unlockedParts[0] is null))
+        {
+            Save_Manager.SoftSave();
+        }
     }
 
     ///<summary>
-    ///Use 1 (or nothing) for loading into a function -1 for loading out
+    ///Use 1 (or nothing) for loading into a scene -1 for loading out
     ///</summary>
     public void ChangeSortingOrder(int loadIn = 1)
     {
@@ -83,7 +85,7 @@ public class Game_Manager : MonoBehaviour
         }
         if (Input.GetKeyDown("c"))
         {
-            Save_Manager.SavePlayerData();
+            Save_Manager.SoftSave();
         }
         if (Input.GetKeyDown("b"))
         {
@@ -105,5 +107,10 @@ public class Game_Manager : MonoBehaviour
     public void UnlockPart(int location, string partName)//numbers same as MC_Controller parts
     {
         Info.mc.GetComponent<MC_Controller>().unlockedParts[location].Add(unlockableParts[location][partName]);
+    }
+
+    void OnApplicationQuit()
+    {
+        Save_Manager.ClearTempData();
     }
 }

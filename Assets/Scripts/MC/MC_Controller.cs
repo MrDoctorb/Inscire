@@ -5,7 +5,7 @@ using ZaneSpace;
 using UnityEditor;
 
 public class MC_Controller : MonoBehaviour, IDamageable, IKnockbackable
-{ 
+{
     Health healthDisplay;
     public static int maxHealth = 3;
     public int _health = maxHealth;

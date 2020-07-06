@@ -7,7 +7,7 @@ public class Camera_Controller : MonoBehaviour
     public bool still;
     public Vector3 slidePos;
     float slideSpd;
-    [SerializeField] float startBrightness = 0;
+    //[SerializeField] float startBrightness = 0;
     
     void Start()
     {

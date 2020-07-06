@@ -19,7 +19,7 @@ public class Scene_Move : MonoBehaviour
     {
         if (other.gameObject == mc)
         {
-            Save_Manager.SaveSceneData(SceneManager.GetActiveScene().name);
+            Save_Manager.SoftSave();
             print(SceneManager.GetActiveScene().name + " saved");
 
             mc.transform.position = newLocation;

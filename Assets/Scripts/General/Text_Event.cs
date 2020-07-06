@@ -60,7 +60,6 @@ public class Text_Event : MonoBehaviour, IInteractable, ITextEvent, ISaveable
     {
         saveKey = gameObject.name + " " + transform.position.x + " " + transform.position.y;
         finished = (bool)data.Take<object>(saveKey);
-        print("Text event was loaded, and finished=" + finished);
         if (finished)
         {
             gameObject.SetActive(false);

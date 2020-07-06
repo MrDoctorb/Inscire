@@ -15,9 +15,9 @@ public class MC_Data
         maxHealth = MC_Controller.maxHealth;
         pos[0] = Info.mc.transform.position.x;
         pos[1] = Info.mc.transform.position.y;
-        
+
         //Save the equipped parts
-        for(int i = 1; i <= 5; i++)
+        for (int i = 1; i <= 5; i++)
         {
             equippedParts.Add(Info.mc.transform.GetChild(i).name);
         }

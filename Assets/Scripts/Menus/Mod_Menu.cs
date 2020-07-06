@@ -25,15 +25,12 @@ public class Mod_Menu : MonoBehaviour
         }
         buttons[selected].GetComponent<Image>().sprite = states[1];
         mc = ZaneSpace.Info.mc.GetComponent<MC_Controller>();
-        print(mc);
         mc.GetComponent<Move>().enabled = false;
         mc.GetComponent<Attack>().enabled = false;
         mc.GetComponent<Inventory>().enabled = false;
         mc.transform.eulerAngles = Vector3.zero;
         mc.transform.position = new Vector2(1, 0);
         ZaneSpace.Info.gm.transform.GetChild(0).gameObject.SetActive(false);
-
-
     }
 
     void Update()

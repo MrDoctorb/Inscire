@@ -29,14 +29,7 @@ public class Modification_Tank : MonoBehaviour, ITextEvent, ISaveable, IInteract
     {
         playerInteracting = true;
         GetComponent<Display_Text>().Interact();
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject == Info.mc)
-        {
-            Save_Manager.SavePlayerData();
-        }
+        Save_Manager.HardSave();
     }
 
     public bool locked
