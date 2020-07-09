@@ -30,6 +30,7 @@ public class Slider_Minigame : MonoBehaviour
         while (transform.localScale.x <= 2)
         {
             transform.localScale += new Vector3(2, 2, 0) * Time.deltaTime;
+            bar.transform.localPosition = Vector2.zero;
             yield return new WaitForEndOfFrame();
         }
         yield return new WaitForSeconds(1);

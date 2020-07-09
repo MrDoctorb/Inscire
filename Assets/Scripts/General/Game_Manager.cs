@@ -16,13 +16,15 @@ public class Game_Manager : MonoBehaviour
 
     void OnEnable()
     {
+        //Establish Zanespace Variables
         Info.mc = GameObject.Find("MC");
         Info.gm = gameObject;
         Info.rb = Info.mc.GetComponent<Rigidbody2D>();
+        //Add OnSceneLoaded Function
         SceneManager.sceneLoaded += OnSceneLoaded;
+        //Allow Game Manager and MC to persist between Scenes
         DontDestroyOnLoad(ZaneSpace.Info.mc);
         DontDestroyOnLoad(gameObject);
-
         //This seems jank
         leftArm = ListToDictionary(leftArmUnlockables);
         rightArm = ListToDictionary(rightArmUnlockables);

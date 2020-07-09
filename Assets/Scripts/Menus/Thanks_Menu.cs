@@ -13,6 +13,8 @@ public class Thanks_Menu : MonoBehaviour
     void OnEnable()
     {
         transform.GetChild(selected).GetComponent<Image>().sprite = buttons[1];
+        //Turn off UI display
+        ZaneSpace.Info.gm.transform.GetChild(0).gameObject.SetActive(false);
     }
 
     void Update()

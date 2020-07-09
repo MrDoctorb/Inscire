@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Mod_Menu : MonoBehaviour
 {
+    #pragma warning disable 0649
     [SerializeField] Text text;
+    #pragma warning restore 0649
     GameObject[] buttons = new GameObject[5];
     MC_Controller mc;
     Transform currentBox;
@@ -16,7 +18,8 @@ public class Mod_Menu : MonoBehaviour
     bool submenu = false;
 
     void Start()
-    {        
+    {   
+        //Establish Buttons     
         int i = 0;
         foreach (RectTransform child in GameObject.Find("Buttons").GetComponent<RectTransform>())
         {
@@ -24,12 +27,15 @@ public class Mod_Menu : MonoBehaviour
             i++;
         }
         buttons[selected].GetComponent<Image>().sprite = states[1];
+        //Find MC and disable parts of it
         mc = ZaneSpace.Info.mc.GetComponent<MC_Controller>();
         mc.GetComponent<Move>().enabled = false;
         mc.GetComponent<Attack>().enabled = false;
         mc.GetComponent<Inventory>().enabled = false;
+        //Lock MC to set position
         mc.transform.eulerAngles = Vector3.zero;
         mc.transform.position = new Vector2(1, 0);
+        //Turn off UI display
         ZaneSpace.Info.gm.transform.GetChild(0).gameObject.SetActive(false);
     }
 

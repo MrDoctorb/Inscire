@@ -7,11 +7,15 @@ public class Startup_Screen : MonoBehaviour
 {
     void Start()
     {
+        //Fade In Images
         foreach (Image image in GetComponentsInChildren<Image>())
         {
             image.CrossFadeAlpha(1, 3, true);
         }
         GetComponentInChildren<Text>().CrossFadeAlpha(1, 3, true);
+        //Hide Cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()

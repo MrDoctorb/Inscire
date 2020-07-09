@@ -7,7 +7,7 @@ public class Reset_Button : MonoBehaviour, IInteractable
 
 #pragma warning disable 0649
     [SerializeField] GameObject[] buttons;
-#pragma warning restore 1234
+#pragma warning restore 0649
 
     public void Interact()
     {
