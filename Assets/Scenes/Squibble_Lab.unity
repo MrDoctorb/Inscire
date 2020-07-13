@@ -7993,9 +7993,8 @@ GameObject:
   - component: {fileID: 1324984611}
   - component: {fileID: 1324984610}
   - component: {fileID: 1324984609}
-  - component: {fileID: 1324984612}
   - component: {fileID: 1324984614}
-  - component: {fileID: 1324984613}
+  - component: {fileID: 1324984612}
   m_Layer: 0
   m_Name: Squibble_1
   m_TagString: Untagged
@@ -8122,27 +8121,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1324984607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69a70b1b3b22bb846a6244fb1bb869bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 65966cf2acb5d2d46a6e82518b7c5cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeSpeed: 0.1
-  fadeIn: 1
---- !u!114 &1324984613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324984607}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19368a8810320c34c9e385e53c7d362d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  invisible: 1
+  finished: 0
   textEvents:
   - ObjectField: {fileID: 1860777048102173269}
     ResultType: 
-  invisible: 0
 --- !u!114 &1324984614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8155,9 +8141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: 0
+  dialogue: 1
   silhouette: 0
-  faceTalk: {fileID: 0}
+  faceTalk: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
   text:
   - '"Brilliant! Oh this will be so exciting!"'
   - '"Please please, take a step forward. This tank will start to show you your true
@@ -11996,7 +11982,6 @@ GameObject:
   - component: {fileID: 2123786042}
   - component: {fileID: 2123786044}
   - component: {fileID: 2123786043}
-  - component: {fileID: 2123786045}
   m_Layer: 0
   m_Name: Squibble_0
   m_TagString: Untagged
@@ -12123,11 +12108,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2123786038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69a70b1b3b22bb846a6244fb1bb869bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 65966cf2acb5d2d46a6e82518b7c5cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeSpeed: 0.1
-  fadeIn: 0
+  invisible: 0
+  finished: 0
+  textEvents:
+  - ObjectField: {fileID: 102591985}
+    ResultType: 
 --- !u!114 &2123786044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12159,22 +12147,6 @@ MonoBehaviour:
   - '"This is so exciting! Don''t you agree?"'
   - '"..."'
   - '"Well get out there! Science awaits!"'
---- !u!114 &2123786045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123786038}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19368a8810320c34c9e385e53c7d362d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textEvents:
-  - ObjectField: {fileID: 102591985}
-    ResultType: 
-  invisible: 0
 --- !u!1001 &2147160561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16743,7 +16715,7 @@ PrefabInstance:
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: text.Array.data[5]
-      value: '"I am Professor Yorik von Squibble, but you can just call me Squibble."'
+      value: '"I am Professor Viktor von Squibble, but you can just call me Squibble."'
       objectReference: {fileID: 0}
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
@@ -16839,17 +16811,17 @@ PrefabInstance:
         type: 3}
       propertyPath: textEvents.Array.data[0].ObjectField
       value: 
-      objectReference: {fileID: 1324984612}
+      objectReference: {fileID: 2123786043}
     - target: {fileID: 4371980801913815307, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: textEvents.Array.data[1].ObjectField
       value: 
-      objectReference: {fileID: 2123786043}
+      objectReference: {fileID: 1324984612}
     - target: {fileID: 4371980801913815307, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: textEvents.Array.data[2].ObjectField
       value: 
-      objectReference: {fileID: 1324984612}
+      objectReference: {fileID: 0}
     - target: {fileID: 4371980801913815307, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: invisible
