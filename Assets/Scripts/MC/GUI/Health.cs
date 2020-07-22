@@ -40,6 +40,7 @@ public class Health : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1);
         deathWave = transform.GetChild(3).GetComponent<RectTransform>();
+        deathWave.GetComponent<Image>().enabled = true;
         Transform cam = GameObject.Find("Camera").transform;
         float scale = transform.parent.parent.GetComponent<RectTransform>().localScale.x;
         while (deathWave.localPosition.y < -85)
@@ -62,8 +63,7 @@ public class Health : MonoBehaviour
             deathWave.localPosition += new Vector3(0f, 10f, 0);
             yield return new WaitForEndOfFrame();
         }
-
-
+        deathWave.GetComponent<Image>().enabled = false;
     }
 }
 

@@ -18,7 +18,7 @@ public class Mod_Menu : MonoBehaviour
     bool submenu = false;
 
     void Start()
-    {   
+    {
         //Establish Buttons     
         int i = 0;
         foreach (RectTransform child in GameObject.Find("Buttons").GetComponent<RectTransform>())
@@ -37,6 +37,8 @@ public class Mod_Menu : MonoBehaviour
         mc.transform.position = new Vector2(1, 0);
         //Turn off UI display
         ZaneSpace.Info.gm.transform.GetChild(0).gameObject.SetActive(false);
+        //Music
+        ZaneSpace.Info.gm.GetComponent<Music_Manager>().ChangeSong("Modification");
     }
 
     void Update()
