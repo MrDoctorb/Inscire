@@ -28,7 +28,7 @@ public class Attack : MonoBehaviour
 
     void Update()
     {
-        if (Info.time != 0)
+        if (!Info.worldPaused)
         {
             if (Input.GetButtonDown("Primary"))
             {
@@ -37,12 +37,20 @@ public class Attack : MonoBehaviour
                 {
                     if (!ArmAttack(leftArm))
                     {
-                        FindInteractable();
+                        IInteractable interactable = FindInteractable();
+                        if (interactable != null)
+                        {
+                            interactable.Interact();
+                        }
                     }
                 }
                 else
                 {
-                    FindInteractable();
+                    IInteractable interactable = FindInteractable();
+                    if (interactable != null)
+                    {
+                        interactable.Interact();
+                    }
                 }
             }
             else if (Input.GetButtonDown("Secondary") && rightArm.GetComponent<Arm_Stats>().readyToAttack)
@@ -58,7 +66,7 @@ public class Attack : MonoBehaviour
 
     }
 
-    void FindInteractable()
+    IInteractable FindInteractable()
     {
         GetComponent<BoxCollider2D>().Cast(new Vector2(), raycastList);
         bool first = true;
@@ -80,11 +88,12 @@ public class Attack : MonoBehaviour
                 {
                     //Interacts with first found object then it stops
                     IInteractable interactable = (IInteractable)comp;
-                    interactable.Interact();
-                    break;
+                    //interactable.Interact();
+                    return interactable;
                 }
             }
         }
+        return null;
     }
 
     bool ArmAttack(GameObject attackingArm)

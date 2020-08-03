@@ -32,7 +32,7 @@ public interface ITextEvent
     void TextFinished();//Will be called most by Display_Text
 }
 
-[Serializable]
+[System.Serializable]
 public class ITextEventContainer : IUnifiedContainer<ITextEvent> { }
 
 public interface ISaveable

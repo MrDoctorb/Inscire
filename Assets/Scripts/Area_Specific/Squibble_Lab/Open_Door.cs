@@ -5,6 +5,7 @@ using UnityEngine;
 public class Open_Door : MonoBehaviour, ITextEvent, IInteractable
 {
     Display_Text text;
+    ITextEventContainer tempEvent;
     bool playerInteracting = false, _locked;
     bool locked
     {
@@ -17,17 +18,27 @@ public class Open_Door : MonoBehaviour, ITextEvent, IInteractable
             _locked = value;
             if(_locked)
             {
-                text.text = new string[] {"Outside looks dismal and dark. Best to stay inside for now."};
+                text.textInfo = new TextBlock[1];
+                text.textInfo[0] = new TextBlock();
+                text.textInfo[0].text = "Outside looks dismal and dark. Best to stay inside for now.";
+                text.textInfo[0].textEvent = new ITextEventContainer();
             }
             else
             {
-                text.text = new string[] {"The doors swing open with ease.", "The doors swing open with ease. Time to explore." };
+                text.textInfo = new TextBlock[2];
+                text.textInfo[0] = new TextBlock();
+                text.textInfo[0].text = "The doors swing open with ease.";
+                text.textInfo[0].textEvent = tempEvent;
+                text.textInfo[1] = new TextBlock();
+                text.textInfo[1].text = "Time to explore.";
+                text.textInfo[1].additive = true;
             }
         }
     }
     void Start()
     {
         text = GetComponent<Display_Text>();
+        tempEvent = text.textInfo[0].textEvent;
         locked = true;
     }
 

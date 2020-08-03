@@ -216,6 +216,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: The tank is filled with a thick liquid. It looks like something once grew
+      in here.
+    dialogue: 0
+    newFace: 0
+    silhouette: 0
+    faceTalk: {fileID: 0}
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}

@@ -43,11 +43,11 @@ public class Modification_Tank : MonoBehaviour, ITextEvent, ISaveable, IInteract
             _locked = value;
             if(_locked)
             {
-                text.text = new string[] {"The tank looks like it could be opened. But the glass doesn't budge."};
+                text.textInfo[0].text = "The tank looks like it could be opened. But the glass doesn't budge.";
             }
             else
             {
-                text.text = new string[] {"Wrrrrr"};
+                text.textInfo[0].text = "The glass slides open with a mechanical wrr.";
             }
         }
     }

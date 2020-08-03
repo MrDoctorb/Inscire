@@ -22,31 +22,32 @@ public class Squibble_Controller : MonoBehaviour, ITextEvent, ISaveable
         }
         else
         {
-            StartCoroutine(TeleportOut());
-            if (textEvents.Count > 0)
-            {
-                foreach (ITextEventContainer eve in textEvents)
-                {
-                    InterfaceInfo.interfaceText = eve;
-                    InterfaceInfo.TextEvent.TextFinished();
-                }
-            }
             //Bad design but works for now
+            //Detects if the player is close when talking, only happens if text is triggered by interacting
             if (Mathf.Abs(Vector2.Distance(transform.position, Info.mc.transform.position)) < 2)
             {
                 finished = true;
+                if (textEvents.Count > 0)
+                {
+                    foreach (ITextEventContainer eve in textEvents)
+                    {
+                        InterfaceInfo.interfaceText = eve;
+                        InterfaceInfo.TextEvent.TextFinished();
+                    }
+                }
             }
+            StartCoroutine(TeleportOut());
         }
     }
     IEnumerator TeleportOut()
     {
-        print("Teleport away! >:3");
         anime.SetTrigger("Teleport");
+        GetComponent<BoxCollider2D>().enabled = false;
         //Wait for animation to end
         while (!anime.IsInTransition(0))
         {
             gameObject.SetActive(true);
-            yield return null;
+            yield return new WaitForEndOfFrame();
         }
         gameObject.SetActive(false);
     }

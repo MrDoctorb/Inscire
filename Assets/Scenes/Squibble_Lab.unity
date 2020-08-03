@@ -166,6 +166,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: This drawer is extremly clean. Also empty save one note.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Attention staff! If you forget your keycode you won''t be able to exit
+      the lab!"'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"If you do end up forgetting I have stored a half of a code in each lab."'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Now get out there and do some good science!! -Boss"'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -373,8 +415,9 @@ Transform:
   - {fileID: 1720411388}
   - {fileID: 1798793440}
   - {fileID: 1204901488}
+  - {fileID: 3454771419544645126}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &14234372
 GameObject:
@@ -479,6 +522,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: Several papers cover the surface of the desk.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Remember everyone the buttons are pressure sensitive!"'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"The closer to the center you hit them the more you''ll change them!"'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"You can even hit them multiple times to keep changing!"'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Match the color on the floor with the color of the button to open the
+      door!"'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Hit the blue button in the corner to reset the pressure sensitive one.
+      Have fun! -Boss"'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -888,6 +994,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: Outside looks dismal and dark. Best to stay inside for now.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 102591985}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -1686,6 +1803,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
         type: 3}
+      propertyPath: textInfo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
+        type: 3}
       propertyPath: dialogue
       value: 1
       objectReference: {fileID: 0}
@@ -1704,6 +1826,36 @@ PrefabInstance:
       propertyPath: faceTalk
       value: 
       objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+    - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].text
+      value: '"There''s nothing interesting to you in there. Just some personal items."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+    - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].text
+      value: '"No need to open it."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].dialogue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3411499152702283877, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1795,6 +1947,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
+      propertyPath: textInfo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
       propertyPath: dialogue
       value: 1
       objectReference: {fileID: 0}
@@ -1817,6 +1974,56 @@ PrefabInstance:
         type: 3}
       propertyPath: text.Array.data[1]
       value: '"I mean it!"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].text
+      value: '"D-don''t come any closer!"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].silhouette
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].text
+      value: '"I mean it!"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].newFace
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].silhouette
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].faceTalk
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
@@ -1999,7 +2206,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1106893432}
     m_Modifications:
     - target: {fileID: 2370666256232773071, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -2029,17 +2236,17 @@ PrefabInstance:
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -2049,7 +2256,7 @@ PrefabInstance:
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -2078,6 +2285,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 896c2775d9360f04dab307f674e28d3b, type: 3}
+--- !u!4 &268478323 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 268478322}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &271958784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,7 +2476,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &292920303
 GameObject:
@@ -2539,6 +2752,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: The left half of a torn note. It reads "21"
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -2594,6 +2818,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &342138296 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1285261227537157227, guid: 34702a2cb6b895844a4de0f91d98c375,
+    type: 3}
+  m_PrefabInstance: {fileID: 2840287592394760277}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7296015f7edb2448ee2965eadcc3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &380064539
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,6 +3424,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
         type: 3}
+      propertyPath: textInfo.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
       propertyPath: text.Array.data[0]
       value: 'At first glance this looks like the rest of the tanks. '
       objectReference: {fileID: 0}
@@ -3210,6 +3451,61 @@ PrefabInstance:
         type: 3}
       propertyPath: text.Array.data[4]
       value: What's happening here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].text
+      value: But there's..
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[2].text
+      value: something..
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[3].text
+      value: A silhouette of a figure is floating within.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[4].text
+      value: What's happening here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].text
+      value: 'At first glance this looks like the rest of the tanks. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[2].additive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[3].additive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[4].textSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[3].textSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[2].textSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724559555241680841, guid: c8057f31d3bc09948adbc4be373d2e4c,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].textSpeed
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8057f31d3bc09948adbc4be373d2e4c, type: 3}
@@ -3309,6 +3605,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: A painting of a volcano erupting into a night sky.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -3850,7 +4157,7 @@ Transform:
   - {fileID: 824667956}
   - {fileID: 910778390}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &521126615
 GameObject:
@@ -4390,7 +4697,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1106893432}
     m_Modifications:
     - target: {fileID: 2370666256232773071, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -4420,17 +4727,17 @@ PrefabInstance:
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -4440,7 +4747,7 @@ PrefabInstance:
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -4469,6 +4776,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 896c2775d9360f04dab307f674e28d3b, type: 3}
+--- !u!4 &568147833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 568147832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &568749592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4516,6 +4829,31 @@ PrefabInstance:
       propertyPath: silhouette
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].text
+      value: '"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].silhouette
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4719,8 +5057,20 @@ Transform:
   - {fileID: 754241964}
   - {fileID: 1099875647}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &618417016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4371980801913815307, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1069386558436454019}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19368a8810320c34c9e385e53c7d362d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &632929260
 GameObject:
   m_ObjectHideFlags: 0
@@ -4842,6 +5192,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: 'The tank blocks the path forward. The liquid spilling from it pools in
+      small bubbles. '
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -4966,6 +5328,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: The table is full of beakers and vials.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: One of the liquids seems to be glowing.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: Why isn't it mixing with the water?
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -5121,7 +5514,7 @@ Transform:
   - {fileID: 2051498228}
   - {fileID: 924219225}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &718057619 stripped
 Transform:
@@ -5409,6 +5802,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
+      propertyPath: textInfo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
       propertyPath: dialogue
       value: 1
       objectReference: {fileID: 0}
@@ -5431,6 +5829,41 @@ PrefabInstance:
         type: 3}
       propertyPath: text.Array.data[1]
       value: '"W-who''s there?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].text
+      value: '"W-who''s there?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].text
+      value: Huh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].silhouette
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].dialogue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
@@ -6150,6 +6583,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: The right half of a torn note. It reads "35"
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -6632,7 +7076,7 @@ Transform:
   - {fileID: 2122542693}
   - {fileID: 102591983}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1024178164 stripped
 Transform:
@@ -6844,8 +7288,11 @@ Transform:
   - {fileID: 1860777048102173268}
   - {fileID: 1537366489}
   - {fileID: 1324984608}
+  - {fileID: 1493094611}
+  - {fileID: 268478323}
+  - {fileID: 568147833}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107782244
 GameObject:
@@ -7651,7 +8098,7 @@ Transform:
   - {fileID: 333992791}
   - {fileID: 1507296947}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1204901487
 GameObject:
@@ -8178,7 +8625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324984607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.5, y: 40.5, z: 0}
+  m_LocalPosition: {x: -13.5, y: 39.65, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1106893432}
@@ -8309,6 +8756,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: '"Brilliant! Oh this will be so exciting!"'
+    dialogue: 1
+    additive: 0
+    newFace: 1
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Please please, take a step forward. This tank will start to show you
+      your true potential!"'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 1324984612}
+      ResultType: 
   dialogue: 1
   silhouette: 0
   faceTalk: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
@@ -8648,6 +9117,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: The tank is filled with a thick liquid. It looks like something once grew
+      in here.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -9013,7 +9494,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1106893432}
     m_Modifications:
     - target: {fileID: 2370666256232773071, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -9043,17 +9524,17 @@ PrefabInstance:
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -9063,7 +9544,7 @@ PrefabInstance:
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -9092,6 +9573,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 896c2775d9360f04dab307f674e28d3b, type: 3}
+--- !u!4 &1493094611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1493094610}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1507296946
 GameObject:
   m_ObjectHideFlags: 0
@@ -9160,7 +9647,7 @@ Transform:
   - {fileID: 1407134453}
   - {fileID: 976614075}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1524310694 stripped
 GameObject:
@@ -10473,6 +10960,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: The tank is filled with a thick liquid. It looks like something once grew
+      in here.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -10596,6 +11095,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: The drawer is stuck..
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -10883,6 +11393,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: The drawer is filled with papers in inillegible handwriting. One legible
+      note reads,
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Reminder of all staff to keep your log books on hand at all times!"'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Press "L" to open them up and access all sorts of handy info! -Boss"'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -11427,6 +11969,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: A painting of a waterfall among trees and rocks.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: Why do we know this?
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -12380,6 +12943,158 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: '"Wonderful!'
+    dialogue: 1
+    additive: 0
+    newFace: 1
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: I can't believe you actually work!
+    dialogue: 1
+    additive: 1
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: It's a dream come true!"
+    dialogue: 1
+    additive: 1
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Now, you''re probably wondering where we are."'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"We''re in my lab, which is in the southern caves."'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Although that probably means nothing to you.."'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Regardless!'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: I'm stuck within the lab for the moment."
+    dialogue: 1
+    additive: 1
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"The creatures outdoors are not fond of me, and attack me on sight!"'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"If you could go out there and deal with that issue I would greatly appreciate
+      it!"'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Not only that, it will be a great time to monitor your potential!"'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"This is so exciting! Don''t you agree?"'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"..."'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: '"Well get out there!'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 0}
+      ResultType: 
+  - text: Science awaits!"
+    dialogue: 1
+    additive: 1
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 2123786043}
+      ResultType: 
   dialogue: 1
   silhouette: 0
   faceTalk: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
@@ -16931,6 +17646,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
+      propertyPath: textInfo.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
       propertyPath: dialogue
       value: 1
       objectReference: {fileID: 0}
@@ -16994,6 +17714,186 @@ PrefabInstance:
       propertyPath: text.Array.data[7]
       value: '"This is so exciting, please, follow me to the tank in the hall!"'
       objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].text
+      value: '"Aaaaaa..'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].text
+      value: Ah?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].additive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[2].text
+      value: '"W-wait,'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[3].text
+      value: its you?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[3].additive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[4].text
+      value: '"It worked!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[5].text
+      value: It actually worked!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[5].additive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[6].text
+      value: And the inscitus left no marks on you!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[6].additive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[7].text
+      value: '"Sorry you must be very confused,'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[8].text
+      value: I'm just so excited to meet you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[8].additive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[8].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[7].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[5].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[4].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[2].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[9].text
+      value: '"I am Professor Viktor von Squibble, but you can just call me Squibble."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[9].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[10].text
+      value: '"This is so exciting,'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[10].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[11].text
+      value: please,
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[11].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[11].additive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[12].text
+      value: follow me to the tank in the hall!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[12].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[12].additive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[3].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[6].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[12].textEvent.ObjectField
+      value: 
+      objectReference: {fileID: 618417016}
     - target: {fileID: 3705758494366270286, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17198,6 +18098,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: The glass slides open with a mechanical wrr.
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 1860777048102173269}
+      ResultType: 
   dialogue: 0
   silhouette: 0
   faceTalk: {fileID: 0}
@@ -17429,29 +18340,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1285261227537157227, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
-      propertyPath: buttons.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1285261227537157227, guid: 34702a2cb6b895844a4de0f91d98c375,
-        type: 3}
-      propertyPath: values.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1285261227537157227, guid: 34702a2cb6b895844a4de0f91d98c375,
-        type: 3}
       propertyPath: buttons.Array.data[0]
       value: 
       objectReference: {fileID: 563899961}
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
-      propertyPath: text.Array.size
+      propertyPath: textInfo.Array.data[0].textEvent
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
-      propertyPath: text.Array.data[0]
-      value: '"The door seems to be locked. There must be a way to open it."'
-      objectReference: {fileID: 0}
+      propertyPath: textInfo.Array.data[0].textEvent.ObjectField
+      value: 
+      objectReference: {fileID: 342138296}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17519,7 +18420,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 12455219}
     m_Modifications:
     - target: {fileID: 2370666256232773071, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -17549,17 +18450,17 @@ PrefabInstance:
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
         type: 3}
@@ -17598,6 +18499,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 896c2775d9360f04dab307f674e28d3b, type: 3}
+--- !u!4 &3454771419544645126 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2795812620638081096, guid: 896c2775d9360f04dab307f674e28d3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3454771419544645125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5307899832151776735
 Transform:
   m_ObjectHideFlags: 0
@@ -26329,7 +27236,7 @@ Transform:
   - {fileID: 7762256235705349536}
   - {fileID: 5307899832151776735}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7762256235886106175
 GameObject:

@@ -12,6 +12,8 @@ public class Multi_Button_Door : MonoBehaviour, ITextEvent, ISaveable
     Display_Text text;
     string saveKey;
 
+    ITextEventContainer tempEvent;
+
     void OnEnable()
     {        
         saveKey = gameObject.name + " " + transform.position.x + " " + transform.position.y;
@@ -21,6 +23,7 @@ public class Multi_Button_Door : MonoBehaviour, ITextEvent, ISaveable
     {
         rend = GetComponent<SpriteRenderer>();
         text = GetComponent<Display_Text>();
+        tempEvent = text.textInfo[0].textEvent;
     }
 
     public void SaveData(Scene_Data data)
@@ -44,7 +47,8 @@ public class Multi_Button_Door : MonoBehaviour, ITextEvent, ISaveable
             if (buttons[i].health != values[i] && currentValue != 2)
             {
                 currentValue = 0;
-                text.text[0] = "The door seems to be locked. There must be a way to open it.";
+                text.textInfo[0].text = "The door seems to be locked. There must be a way to open it.";
+                text.textInfo[0].textEvent = new ITextEventContainer();
                 break;
             }
             else
@@ -55,7 +59,8 @@ public class Multi_Button_Door : MonoBehaviour, ITextEvent, ISaveable
                 }
                 if (!text.dialogue)
                 {
-                    text.text[0] = "Click!";
+                    text.textInfo[0].text = "Click!";
+                    text.textInfo[0].textEvent = tempEvent;
                 }
             }
         }

@@ -9,8 +9,8 @@ public class Directional_Song_Change : MonoBehaviour
     Music_Manager mm;
     Transform mc;
     Vector2 enterPos;
-    [SerializeField] string newSong;
-    [SerializeField] bool north, east, south, west;
+    [SerializeField] string newSong = "";
+    [SerializeField] bool north = false, east = false, south = false, west = false;
 
     void Start()
     {

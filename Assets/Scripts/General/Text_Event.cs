@@ -24,7 +24,7 @@ public class Text_Event : MonoBehaviour, IInteractable, ITextEvent, ISaveable
         {
             GetComponent<Display_Text>().enabled = true;
             GetComponent<Display_Text>().Interact();
-            GetComponent<Display_Text>().ProgressText();
+            //GetComponent<Display_Text>().ProgressText();
             GetComponent<Text_Event>().enabled = false;
         }
     }
@@ -47,6 +47,14 @@ public class Text_Event : MonoBehaviour, IInteractable, ITextEvent, ISaveable
             }
         }
         finished = true;
+        StartCoroutine(TurnOff());
+    }
+
+    //Wait two Frame so that the text actually dissapears
+    IEnumerator TurnOff()
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
         gameObject.SetActive(false);
     }
 

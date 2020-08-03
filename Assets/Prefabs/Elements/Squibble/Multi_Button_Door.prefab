@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8166937956784664266}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24.15, y: 6.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -48,6 +48,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -95,9 +96,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textInfo:
+  - text: '"The door seems to be locked. There must be a way to open it."'
+    dialogue: 0
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    faceTalk: {fileID: 0}
+    textEvent:
+      ObjectField: {fileID: 1285261227537157227}
+      ResultType: 
   dialogue: 0
+  silhouette: 0
+  faceTalk: {fileID: 0}
   text:
-  - 
+  - '"The door seems to be locked. There must be a way to open it."'
 --- !u!114 &1285261227537157227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,8 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7296015f7edb2448ee2965eadcc3de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons: []
-  values: 
+  buttons:
+  - {fileID: 0}
+  values: 00000000
   states:
   - {fileID: 46402062766736132, guid: d336e0a6dd7eff546adda18bd1e3a803, type: 3}
   - {fileID: -2078749250548002587, guid: d336e0a6dd7eff546adda18bd1e3a803, type: 3}
