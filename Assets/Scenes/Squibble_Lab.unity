@@ -1999,7 +1999,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textInfo.Array.data[0].faceTalk
       value: 
-      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+      objectReference: {fileID: 9100000, guid: 2554e76cf2520494a8a56a4b38aa6d74, type: 2}
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: textInfo.Array.data[1].text
@@ -4858,7 +4858,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textInfo.Array.data[0].faceTalk
       value: 
-      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+      objectReference: {fileID: 9100000, guid: 2554e76cf2520494a8a56a4b38aa6d74, type: 2}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5864,7 +5864,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textInfo.Array.data[0].faceTalk
       value: 
-      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+      objectReference: {fileID: 9100000, guid: ddb7cc4d1a5f20d4286e1e810a8f20e9, type: 2}
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: textInfo.Array.data[1].dialogue
@@ -8778,7 +8778,7 @@ MonoBehaviour:
     newFace: 1
     silhouette: 0
     textSpeed: 1
-    faceTalk: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+    faceTalk: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
     textEvent:
       ObjectField: {fileID: 0}
       ResultType: 
@@ -12965,7 +12965,7 @@ MonoBehaviour:
     newFace: 1
     silhouette: 0
     textSpeed: 1
-    faceTalk: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+    faceTalk: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
     textEvent:
       ObjectField: {fileID: 0}
       ResultType: 
@@ -12992,10 +12992,10 @@ MonoBehaviour:
   - text: '"Now, you''re probably wondering where we are."'
     dialogue: 1
     additive: 0
-    newFace: 0
+    newFace: 1
     silhouette: 0
     textSpeed: 1
-    faceTalk: {fileID: 0}
+    faceTalk: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
     textEvent:
       ObjectField: {fileID: 0}
       ResultType: 
@@ -13012,30 +13012,30 @@ MonoBehaviour:
   - text: '"Although that probably means nothing to you.."'
     dialogue: 1
     additive: 0
-    newFace: 0
+    newFace: 1
     silhouette: 0
     textSpeed: 1
-    faceTalk: {fileID: 0}
+    faceTalk: {fileID: 9100000, guid: ddb7cc4d1a5f20d4286e1e810a8f20e9, type: 2}
     textEvent:
       ObjectField: {fileID: 0}
       ResultType: 
   - text: '"Regardless!'
     dialogue: 1
     additive: 0
-    newFace: 0
+    newFace: 1
     silhouette: 0
     textSpeed: 1
-    faceTalk: {fileID: 0}
+    faceTalk: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
     textEvent:
       ObjectField: {fileID: 0}
       ResultType: 
   - text: I'm stuck within the lab for the moment."
     dialogue: 1
     additive: 1
-    newFace: 0
+    newFace: 1
     silhouette: 0
     textSpeed: 1
-    faceTalk: {fileID: 0}
+    faceTalk: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
     textEvent:
       ObjectField: {fileID: 0}
       ResultType: 
@@ -13083,30 +13083,30 @@ MonoBehaviour:
   - text: '"..."'
     dialogue: 1
     additive: 0
-    newFace: 0
+    newFace: 1
     silhouette: 0
     textSpeed: 1
-    faceTalk: {fileID: 0}
+    faceTalk: {fileID: 9100000, guid: ddb7cc4d1a5f20d4286e1e810a8f20e9, type: 2}
     textEvent:
       ObjectField: {fileID: 0}
       ResultType: 
   - text: '"Well get out there!'
     dialogue: 1
     additive: 0
-    newFace: 0
+    newFace: 1
     silhouette: 0
     textSpeed: 1
-    faceTalk: {fileID: 0}
+    faceTalk: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
     textEvent:
       ObjectField: {fileID: 0}
       ResultType: 
   - text: Science awaits!"
     dialogue: 1
     additive: 1
-    newFace: 0
+    newFace: 1
     silhouette: 0
     textSpeed: 1
-    faceTalk: {fileID: 0}
+    faceTalk: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
     textEvent:
       ObjectField: {fileID: 2123786043}
       ResultType: 
@@ -17748,7 +17748,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textInfo.Array.data[0].faceTalk
       value: 
-      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+      objectReference: {fileID: 9100000, guid: 2554e76cf2520494a8a56a4b38aa6d74, type: 2}
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: textInfo.Array.data[1].text
@@ -17807,7 +17807,7 @@ PrefabInstance:
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: textInfo.Array.data[8].text
-      value: I'm just so excited to meet you."
+      value: I'm just so excited to meet you!"
       objectReference: {fileID: 0}
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
@@ -17989,6 +17989,56 @@ PrefabInstance:
       propertyPath: textInfo.Array.data[12].textSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: ddb7cc4d1a5f20d4286e1e810a8f20e9, type: 2}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[4].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[4].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[7].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[7].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[8].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[8].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[9].newFace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[9].faceTalk
+      value: 
+      objectReference: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
     - target: {fileID: 3705758494366270286, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: m_LocalPosition.x
