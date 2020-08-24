@@ -73,7 +73,7 @@ public class Display_Text : MonoBehaviour, IInteractable
             //Check to see if the talking animation needs changed
             if (textBlock.newFace)
             {
-                Transform face = dialougeTextBox.transform.GetChild(2);
+                Transform face = dialougeTextBox.transform.GetChild(1).GetChild(0);
                 face.GetComponent<Animator>().runtimeAnimatorController = textBlock.faceTalk;
                 face.GetComponent<Image>().color = Color.white;
                 if (textBlock.silhouette)
@@ -157,6 +157,10 @@ public class Display_Text : MonoBehaviour, IInteractable
     //Use this function to take a string and convert it into singular characters to be displayed
     IEnumerator GenerateLetters(string textLine)
     {
+        if(textBlock.textSpeed <= 0)
+        {
+            print("Please fix me! My text speed is invalid!");
+        }
         currentlyTyping = true;
         //If we are adding text, give it a space
         if (textBlock.additive)
@@ -173,7 +177,7 @@ public class Display_Text : MonoBehaviour, IInteractable
             currentLine.text += letter;
             //Wait at minimum a frame, can change textSpeed to be slower or faster
             yield return new WaitForEndOfFrame();
-            yield return new WaitForSeconds(.05f / textBlock.textSpeed);
+            yield return new WaitForSeconds(.05f * textBlock.textSpeed);
         }
         currentlyTyping = false;
         //Save the line for later if the player skips text
