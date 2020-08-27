@@ -57,7 +57,7 @@ public class Multi_Button_Door : MonoBehaviour, ITextEvent, ISaveable
                 {
                     currentValue = 1;
                 }
-                if (!text.dialogue)
+                if (!text.textInfo[0].dialogue)
                 {
                     text.textInfo[0].text = "Click!";
                     text.textInfo[0].textEvent = tempEvent;

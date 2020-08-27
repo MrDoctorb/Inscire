@@ -1845,7 +1845,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textInfo.Array.data[0].faceTalk
       value: 
-      objectReference: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
+      objectReference: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
     - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
         type: 3}
       propertyPath: textInfo.Array.data[1].text
@@ -1854,6 +1854,16 @@ PrefabInstance:
     - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
         type: 3}
       propertyPath: textInfo.Array.data[1].dialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].textSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411499152702283876, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].textSpeed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3411499152702283877, guid: 6ba09ec789a662d4f995f6b7d7e3e509,
@@ -5878,7 +5888,7 @@ PrefabInstance:
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: textInfo.Array.data[1].newFace
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
@@ -17927,7 +17937,7 @@ PrefabInstance:
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: textInfo.Array.data[0].silhouette
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
