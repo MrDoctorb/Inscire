@@ -174,9 +174,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Attention staff! If you forget your keycode you won''t be able to exit
       the lab!"'
     dialogue: 0
@@ -185,9 +183,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"If you do end up forgetting I have stored a half of a code in each lab."'
     dialogue: 0
     additive: 0
@@ -195,9 +191,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Now get out there and do some good science!! -Boss"'
     dialogue: 0
     additive: 0
@@ -205,18 +199,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - This drawer is extremly clean. Also empty save one note.
-  - '"Attention staff! If you forget your keycode you won''t be able to exit the
-    lab!"'
-  - '"If you do end up forgetting I have stored a half of a code in each lab."'
-  - '"Now get out there and do some good science!! -Boss"'
+    textEvents: []
 --- !u!212 &5376270
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -530,9 +513,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Remember everyone the buttons are pressure sensitive!"'
     dialogue: 0
     additive: 0
@@ -540,9 +521,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"The closer to the center you hit them the more you''ll change them!"'
     dialogue: 0
     additive: 0
@@ -550,9 +529,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"You can even hit them multiple times to keep changing!"'
     dialogue: 0
     additive: 0
@@ -560,9 +537,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Match the color on the floor with the color of the button to open the
       door!"'
     dialogue: 0
@@ -571,9 +546,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Hit the blue button in the corner to reset the pressure sensitive one.
       Have fun! -Boss"'
     dialogue: 0
@@ -582,20 +555,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - Several papers cover the surface of the desk.
-  - '"Remember everyone the buttons are pressure sensitive!"'
-  - '"The closer to the center you hit them the more you''ll change them!"'
-  - '"You can even hit them multiple times to keep changing!"'
-  - '"Match the color on the floor with the color of the button to open the door!"'
-  - '"Hit the blue button in the corner to reset the pressure sensitive one. Have
-    fun! -Boss"'
+    textEvents: []
 --- !u!4 &53704932 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 337642298254881064, guid: 529ac221824506b41a4f4b91fa93164a,
@@ -809,6 +769,16 @@ PrefabInstance:
       propertyPath: values.Array.data[0]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.data[0].ObjectField
+      value: 
+      objectReference: {fileID: 182801570}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1002,13 +972,9 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 102591985}
+    textEvents:
+    - ObjectField: {fileID: 102591985}
       ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text: []
 --- !u!114 &102591985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,6 +1321,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &108929534 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1285261227537157227, guid: 34702a2cb6b895844a4de0f91d98c375,
+    type: 3}
+  m_PrefabInstance: {fileID: 568749592}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7296015f7edb2448ee2965eadcc3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &130668214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1531,6 +1509,18 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &141498298 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1285261227537157227, guid: 34702a2cb6b895844a4de0f91d98c375,
+    type: 3}
+  m_PrefabInstance: {fileID: 1625604370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7296015f7edb2448ee2965eadcc3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &162603002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,6 +1774,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &182801570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1285261227537157227, guid: 34702a2cb6b895844a4de0f91d98c375,
+    type: 3}
+  m_PrefabInstance: {fileID: 79412490}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7296015f7edb2448ee2965eadcc3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &215151997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1962,6 +1964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
       propertyPath: dialogue
       value: 1
       objectReference: {fileID: 0}
@@ -2040,6 +2047,11 @@ PrefabInstance:
       propertyPath: textInfo.Array.data[1].textSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.data[0].ObjectField
+      value: 
+      objectReference: {fileID: 562949871}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2775,14 +2787,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - The left half of a torn note. It reads "21"
+    textEvents: []
 --- !u!212 &333992794
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3628,14 +3633,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - A painting of a volcano erupting into a night sky.
+    textEvents: []
 --- !u!61 &473787557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4689,6 +4687,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &562949871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1285261227537157227, guid: 34702a2cb6b895844a4de0f91d98c375,
+    type: 3}
+  m_PrefabInstance: {fileID: 238472471}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7296015f7edb2448ee2965eadcc3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &563899960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 566775441917698448, guid: 471a63fa49ac0904482c364516bcabe1,
@@ -4826,6 +4836,11 @@ PrefabInstance:
       objectReference: {fileID: 1018159426}
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
       propertyPath: dialogue
       value: 1
       objectReference: {fileID: 0}
@@ -4869,6 +4884,11 @@ PrefabInstance:
       propertyPath: textInfo.Array.data[0].faceTalk
       value: 
       objectReference: {fileID: 9100000, guid: 2554e76cf2520494a8a56a4b38aa6d74, type: 2}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.data[0].ObjectField
+      value: 
+      objectReference: {fileID: 108929534}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5080,7 +5100,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1069386558436454019}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1377365895}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19368a8810320c34c9e385e53c7d362d, type: 3}
@@ -5216,15 +5236,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - 'The tank blocks the path forward. The liquid spilling from it pools in small
-    bubbles. '
+    textEvents: []
 --- !u!1001 &652975394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5351,9 +5363,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: One of the liquids seems to be glowing.
     dialogue: 0
     additive: 0
@@ -5361,9 +5371,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: Why isn't it mixing with the water?
     dialogue: 0
     additive: 0
@@ -5371,16 +5379,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - The table is full of beakers and vials.
-  - One of the liquids seems to be glowing.
-  - Why isn't it mixing with the water?
+    textEvents: []
 --- !u!61 &661736530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5822,6 +5821,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
       propertyPath: dialogue
       value: 1
       objectReference: {fileID: 0}
@@ -5890,6 +5894,11 @@ PrefabInstance:
       propertyPath: textInfo.Array.data[1].newFace
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.data[0].ObjectField
+      value: 
+      objectReference: {fileID: 1229831633}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6616,14 +6625,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - The right half of a torn note. It reads "35"
+    textEvents: []
 --- !u!212 &924219224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7316,6 +7318,7 @@ Transform:
   - {fileID: 1493094611}
   - {fileID: 268478323}
   - {fileID: 568147833}
+  - {fileID: 3719415771950842486}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8208,6 +8211,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 568749592}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1229831633 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1285261227537157227, guid: 34702a2cb6b895844a4de0f91d98c375,
+    type: 3}
+  m_PrefabInstance: {fileID: 752415240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7296015f7edb2448ee2965eadcc3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1236437350
 GameObject:
   m_ObjectHideFlags: 0
@@ -8766,9 +8781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invisible: 1
   finished: 0
-  textEvents:
-  - ObjectField: {fileID: 1860777048102173269}
-    ResultType: 
+  textEvents: []
 --- !u!114 &1324984614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8789,9 +8802,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Please please, take a step forward. This tank will start to show you
       your true potential!"'
     dialogue: 1
@@ -8800,16 +8811,11 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 1324984612}
+    textEvents:
+    - ObjectField: {fileID: 1324984612}
       ResultType: 
-  dialogue: 1
-  silhouette: 0
-  faceTalk: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
-  text:
-  - '"Brilliant! Oh this will be so exciting!"'
-  - '"Please please, take a step forward. This tank will start to show you your true
-    potential!"'
+    - ObjectField: {fileID: 1860777048102173269}
+      ResultType: 
 --- !u!1 &1325664261
 GameObject:
   m_ObjectHideFlags: 0
@@ -9151,15 +9157,13 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - The tank is filled with a thick liquid. It looks like something once grew in
-    here.
+    textEvents: []
+--- !u!1 &1377365895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4489998943020902059, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1069386558436454019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1400706127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10287,6 +10291,16 @@ PrefabInstance:
       propertyPath: values.Array.data[2]
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.data[0].ObjectField
+      value: 
+      objectReference: {fileID: 141498298}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10994,15 +11008,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - The tank is filled with a thick liquid. It looks like something once grew in
-    here.
+    textEvents: []
 --- !u!1 &1747412337
 GameObject:
   m_ObjectHideFlags: 0
@@ -11128,14 +11134,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - The drawer is stuck..
+    textEvents: []
 --- !u!212 &1780512047
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11427,9 +11426,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Reminder of all staff to keep your log books on hand at all times!"'
     dialogue: 0
     additive: 0
@@ -11437,9 +11434,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Press "L" to open them up and access all sorts of handy info! -Boss"'
     dialogue: 0
     additive: 0
@@ -11447,17 +11442,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - The drawer is filled with papers in inillegible handwriting. One note that can
-    be read reads,
-  - '"Reminder of all staff to keep your log books on hand at all times!"'
-  - '"Press "L" to open them up and access all sorts of handy info! -Boss"'
+    textEvents: []
 --- !u!212 &1789885973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12002,9 +11987,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: Why do we know this?
     dialogue: 0
     additive: 0
@@ -12012,15 +11995,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - A painting of a waterfall among trees and rocks.
-  - Why do we know this?
+    textEvents: []
 --- !u!1001 &1924491712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12953,9 +12928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invisible: 0
   finished: 0
-  textEvents:
-  - ObjectField: {fileID: 102591985}
-    ResultType: 
+  textEvents: []
 --- !u!114 &2123786044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12976,9 +12949,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: I can't believe you actually work!
     dialogue: 1
     additive: 1
@@ -12986,9 +12957,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: It's a dream come true!"
     dialogue: 1
     additive: 1
@@ -12996,9 +12965,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Now, you''re probably wondering where we are."'
     dialogue: 1
     additive: 0
@@ -13006,9 +12973,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"We''re in my lab, which is in the southern caves."'
     dialogue: 1
     additive: 0
@@ -13016,9 +12981,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Although that probably means nothing to you.."'
     dialogue: 1
     additive: 0
@@ -13026,9 +12989,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 9100000, guid: ddb7cc4d1a5f20d4286e1e810a8f20e9, type: 2}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Regardless!'
     dialogue: 1
     additive: 0
@@ -13036,9 +12997,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: I'm stuck within the lab for the moment."
     dialogue: 1
     additive: 1
@@ -13046,9 +13005,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"The creatures outdoors are not fond of me, and attack me on sight!"'
     dialogue: 1
     additive: 0
@@ -13056,9 +13013,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"If you could go out there and deal with that issue I would greatly appreciate
       it!"'
     dialogue: 1
@@ -13067,9 +13022,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Not only that, it will be a great time to monitor your potential!"'
     dialogue: 1
     additive: 0
@@ -13077,9 +13030,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"This is so exciting! Don''t you agree?"'
     dialogue: 1
     additive: 0
@@ -13087,9 +13038,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"..."'
     dialogue: 1
     additive: 0
@@ -13097,9 +13046,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 9100000, guid: ddb7cc4d1a5f20d4286e1e810a8f20e9, type: 2}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: '"Well get out there!'
     dialogue: 1
     additive: 0
@@ -13107,9 +13054,7 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
-    textEvent:
-      ObjectField: {fileID: 0}
-      ResultType: 
+    textEvents: []
   - text: Science awaits!"
     dialogue: 1
     additive: 1
@@ -13117,28 +13062,13 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 9100000, guid: 45e0dd8228846ed4fb0d81cb5ee93afc, type: 2}
-    textEvent:
-      ObjectField: {fileID: 2123786043}
+    textEvents:
+    - ObjectField: {fileID: 2123786043}
       ResultType: 
-  dialogue: 1
-  silhouette: 0
-  faceTalk: {fileID: 9100000, guid: 096b4adef65d80d4ca22cb2f31b8f242, type: 2}
-  text:
-  - '"Wonderful!'
-  - '"Wonderful! I can''t believe you actually work!'
-  - '"Wonderful! I can''t believe you actually work! It''s a dream come true!"'
-  - '"Now, you''re probably wondering where we are."'
-  - '"We''re in my lab, which is in the southern caves."'
-  - '"Although that probably means nothing to you.."'
-  - '"Regardless!'
-  - '"Regardless! I''m stuck within the lab for the moment."'
-  - '"The creatures outdoors are not fond of me, and attack me on sight!"'
-  - '"If you could go out there and deal with that issue I would greatly appreciate
-    it!"'
-  - '"Not only that, it will be a great time to monitor your potential!"'
-  - '"This is so exciting! Don''t you agree?"'
-  - '"..."'
-  - '"Well get out there! Science awaits!"'
+    - ObjectField: {fileID: 102591985}
+      ResultType: 
+    - ObjectField: {fileID: 4520722840091682708}
+      ResultType: 
 --- !u!1001 &2147160561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17676,6 +17606,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[1].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[2].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[3].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[4].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[5].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[6].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[7].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[8].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[9].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[10].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[11].textEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[12].textEvents.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
       propertyPath: dialogue
       value: 1
       objectReference: {fileID: 0}
@@ -17902,7 +17897,7 @@ PrefabInstance:
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: textInfo.Array.data[12].additive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
@@ -18049,6 +18044,21 @@ PrefabInstance:
       propertyPath: textInfo.Array.data[9].faceTalk
       value: 
       objectReference: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[12].textEvents.Array.data[0].ObjectField
+      value: 
+      objectReference: {fileID: 2123786043}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[12].textEvents.Array.data[1].ObjectField
+      value: 
+      objectReference: {fileID: 1324984612}
+    - target: {fileID: 2776767820506398054, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
+        type: 3}
+      propertyPath: textInfo.Array.data[12].textEvents.Array.data[2].ObjectField
+      value: 
+      objectReference: {fileID: 618417016}
     - target: {fileID: 3705758494366270286, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18112,7 +18122,7 @@ PrefabInstance:
     - target: {fileID: 4371980801913815307, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
       propertyPath: textEvents.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4371980801913815307, guid: 5a7d59bd614da6b46a0220ca7eaf11a7,
         type: 3}
@@ -18146,6 +18156,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a7d59bd614da6b46a0220ca7eaf11a7, type: 3}
+--- !u!61 &1491253239382374817
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4520722840091682707}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1500097089349881741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18261,14 +18297,9 @@ MonoBehaviour:
     silhouette: 0
     textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 1860777048102173269}
+    textEvents:
+    - ObjectField: {fileID: 1860777048102173269}
       ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - Wrrrrrr
 --- !u!61 &1860777048102173267
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18486,6 +18517,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2772656998742752350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4520722840091682707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5269b002889a5c147bc8c68f85e387fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textInfo:
+  - text: '"H-heey!'
+    dialogue: 1
+    additive: 0
+    newFace: 1
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
+    textEvents: []
+  - text: Wait a moment!"
+    dialogue: 1
+    additive: 1
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
+    textEvents: []
+  - text: '"I have some things to say to you!"'
+    dialogue: 1
+    additive: 0
+    newFace: 0
+    silhouette: 0
+    textSpeed: 1
+    faceTalk: {fileID: 9100000, guid: 829ebc100a84cf245bef84fa59e5c637, type: 2}
+    textEvents:
+    - ObjectField: {fileID: 4520722840091682708}
+      ResultType: 
 --- !u!1001 &2840287592394760277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18506,6 +18576,11 @@ PrefabInstance:
     - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
         type: 3}
       propertyPath: textInfo.Array.data[0].textEvent.ObjectField
+      value: 
+      objectReference: {fileID: 342138296}
+    - target: {fileID: 3548126970534112178, guid: 34702a2cb6b895844a4de0f91d98c375,
+        type: 3}
+      propertyPath: textInfo.Array.data[0].textEvents.Array.data[0].ObjectField
       value: 
       objectReference: {fileID: 342138296}
     - target: {fileID: 6792194339345971845, guid: 34702a2cb6b895844a4de0f91d98c375,
@@ -18660,6 +18735,106 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3454771419544645125}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &3719415771950842486
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4520722840091682707}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.5, y: 35.5, z: 0}
+  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1106893432}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &4258328691060365941
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4520722840091682707}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1170858024684782196, guid: 191cc7792b1e6fc449d2fe6e4f0bb05f,
+    type: 3}
+  m_Color: {r: 1, g: 0, b: 1, a: 0.49019608}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &4520722840091682707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3719415771950842486}
+  - component: {fileID: 4258328691060365941}
+  - component: {fileID: 1491253239382374817}
+  - component: {fileID: 4520722840091682708}
+  - component: {fileID: 2772656998742752350}
+  m_Layer: 0
+  m_Name: Text_Barrier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &4520722840091682708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4520722840091682707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f663f5a7f9455249a17f3962cebc9f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invisible: 1
+  startCondition: {fileID: 1377365895}
+  startConditionOn: 0
 --- !u!4 &5307899832151776735
 Transform:
   m_ObjectHideFlags: 0

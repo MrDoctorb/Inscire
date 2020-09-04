@@ -48,7 +48,8 @@ public class MC_Controller : MonoBehaviour, IDamageable, IKnockbackable
 #if UNITY_EDITOR
         if (Input.GetKeyDown("`"))
         {
-            transform.position = SceneView.lastActiveSceneView.camera.transform.position;
+            Vector2 cam = SceneView.lastActiveSceneView.camera.transform.position;
+            transform.position = cam;
         }
 #endif
         foreach (SpriteRenderer rend in renderers)

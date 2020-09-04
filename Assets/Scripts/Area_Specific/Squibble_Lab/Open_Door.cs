@@ -21,14 +21,15 @@ public class Open_Door : MonoBehaviour, ITextEvent, IInteractable
                 text.textInfo = new TextBlock[1];
                 text.textInfo[0] = new TextBlock();
                 text.textInfo[0].text = "Outside looks dismal and dark. Best to stay inside for now.";
-                text.textInfo[0].textEvent = new ITextEventContainer();
+                text.textInfo[0].textEvents = new ITextEventContainer[0];
             }
             else
             {
                 text.textInfo = new TextBlock[2];
                 text.textInfo[0] = new TextBlock();
-                text.textInfo[0].text = "The doors swing open with ease.";
-                text.textInfo[0].textEvent = tempEvent;
+                text.textInfo[0].text = "The doors swing open with ease.";                
+                text.textInfo[0].textEvents = new ITextEventContainer[1];
+                text.textInfo[0].textEvents[0] = tempEvent;
                 text.textInfo[1] = new TextBlock();
                 text.textInfo[1].text = "Time to explore.";
                 text.textInfo[1].additive = true;
@@ -38,12 +39,13 @@ public class Open_Door : MonoBehaviour, ITextEvent, IInteractable
     void Start()
     {
         text = GetComponent<Display_Text>();
-        tempEvent = text.textInfo[0].textEvent;
+        tempEvent = text.textInfo[0].textEvents[0];
         locked = true;
     }
 
     public void TextFinished()
     {
+        print("Recived");
         if (!locked && playerInteracting)
         {
             GetComponent<BoxCollider2D>().enabled = false;

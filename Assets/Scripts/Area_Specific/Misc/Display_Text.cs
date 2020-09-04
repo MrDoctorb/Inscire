@@ -14,11 +14,10 @@ public class TextBlock
     [ConditionalHide("newFace")]
     public bool silhouette;
     [Range(.01f, 2f)]
-    [ConditionalHide("newFace")]
     public float textSpeed = 1f;
     [ConditionalHide("newFace")]
     public RuntimeAnimatorController faceTalk;
-    public ITextEventContainer textEvent = new ITextEventContainer();
+    public ITextEventContainer[] textEvents = new ITextEventContainer[0];
 
 }
 
@@ -39,17 +38,17 @@ public class Display_Text : MonoBehaviour, IInteractable
 
     IEnumerator Startup()
     {
-        yield return new  WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
         Transform textParent = Info.gm.transform.GetChild(2);
         descriptionTextBox = textParent.GetChild(0).gameObject;
         dialougeTextBox = textParent.GetChild(1).gameObject;
     }
     public void Interact()
     {
-        StartCoroutine(plz());
+        StartCoroutine(Delay());
     }
 
-    IEnumerator plz()
+    IEnumerator Delay()
     {
         yield return new WaitForEndOfFrame();
         //Stop the world
@@ -99,10 +98,10 @@ public class Display_Text : MonoBehaviour, IInteractable
         //Refrence to the text we are editing
         currentLine = selectedBox.transform.GetChild(0).GetComponent<Text>();
         //Display the next linec
-        
-        
-            StartCoroutine(GenerateLetters(textBlock.text));
-        
+
+
+        StartCoroutine(GenerateLetters(textBlock.text));
+
         //Turn on the Box to display it to the world
         selectedBox.SetActive(true);
     }
@@ -116,7 +115,7 @@ public class Display_Text : MonoBehaviour, IInteractable
             {
                 StopAllCoroutines();
                 //Additive needs to have a refrence to its previous line, so we call that here
-                if(textBlock.additive)
+                if (textBlock.additive)
                 {
                     currentLine.text = previousLine + " " + textBlock.text;
                 }
@@ -132,10 +131,14 @@ public class Display_Text : MonoBehaviour, IInteractable
             else
             {
                 //Check for text events and run them
-                if (textBlock.textEvent.Result != null)
+                if (textBlock.textEvents.Length > 0)
                 {
-                    InterfaceInfo.interfaceText = textBlock.textEvent;
-                    InterfaceInfo.TextEvent.TextFinished();
+                    foreach (ITextEventContainer textEvent in textBlock.textEvents)
+                    {
+
+                        InterfaceInfo.interfaceText = textEvent;
+                        InterfaceInfo.TextEvent.TextFinished();
+                    }
                 }
                 //If at the end of the text, close it
                 if (textLine >= textInfo.Length - 1)
@@ -164,7 +167,7 @@ public class Display_Text : MonoBehaviour, IInteractable
     //Use this function to take a string and convert it into singular characters to be displayed
     IEnumerator GenerateLetters(string textLine)
     {
-        if(textBlock.textSpeed <= 0)
+        if (textBlock.textSpeed <= 0)
         {
             print("Please fix me! My text speed is invalid!");
         }

@@ -102,15 +102,11 @@ MonoBehaviour:
     additive: 0
     newFace: 0
     silhouette: 0
+    textSpeed: 1
     faceTalk: {fileID: 0}
-    textEvent:
-      ObjectField: {fileID: 1285261227537157227}
+    textEvents:
+    - ObjectField: {fileID: 0}
       ResultType: 
-  dialogue: 0
-  silhouette: 0
-  faceTalk: {fileID: 0}
-  text:
-  - '"The door seems to be locked. There must be a way to open it."'
 --- !u!114 &1285261227537157227
 MonoBehaviour:
   m_ObjectHideFlags: 0
